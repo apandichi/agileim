@@ -6,4 +6,8 @@ angular.module('agileimApp')
         	console.log("users result" + result);
         	$scope.users = result;
         });
+        
+        $scope.markAsFriend = function(userId) {
+        	console.log("marked user id " + userId);
+        };
     });

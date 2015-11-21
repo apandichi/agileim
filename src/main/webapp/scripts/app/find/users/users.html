@@ -1,5 +1,10 @@
 <div>Found users: 
 <ul>
-	<li ng-repeat="user in users">{{user.login}}</li>
+	<li ng-repeat="user in users">
+		{{user.login}}
+		<a href="#" ng-click="markAsFriend(user.id)">
+			<span class="glyphicon glyphicon-user"></span>
+		</a>
+	</li>
 </ul>
 </div>
